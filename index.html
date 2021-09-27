@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>The Vultures</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="flexbox.css">
+</head>
+<body>
+	<header class="containerCabecalho">
+		<h1>
+			<img src="theVulturesVermelho.png">
+		</h1>
+	</header>
+	<div class="conteudoPrincipal">	
+		<main class="containerConteudoPrincipal">
+			<ul>
+				<li>
+					<h2>Sobre a banda</h2>
+					<p class="narracaoSobreBanda">Banda independente de Rock n' Roll, voltado ao publico grunge</p>
+					<p class="narracaoSobreBanda">Em 2008, a The Vultures começa a ganhar forma, as asas do nosso abutre crescia e ganhava forças.</p>
+					<p class="narracaoSobreBanda">Seus integrantes em 2008 ainda eram adolecentes, todos da mesma região, com um único e compartilhado sonho, o qual já começava a ser realidade</p>
+					<p class="narracaoSobreBanda">Alguns anos depois as difículdades surgiram, agora mais velhos tinhamos obrigações de pessoas mais velhas</p>
+					<p class="narracaoSobreBanda">Começamos a nos afastar por motivos de responsabilidades maoires, nosso abutre então no ano de 2013 entra em uma hibernação</p>
+					<p class="narracaoSobreBanda">Em 2016, nosso abutre dava sinais de quem queria acordar, então seus integrantes se reuniram para ajudar ele levantar</p>
+					<p class="narracaoSobreBanda">Ele estava sedento por rock, o simples fato de tocar já não conseguia satisfazer sua existência, ele queria mais</p>
+					<p class="narracaoSobreBanda">Então após um tempo de recuperação nosso abutre voltou a voar e a consquistar os céus, passando por diversos bares e palcos</p>
+					<p class="narracaoSobreBanda">Ele agora estava com a galera e todos os amantes do bom e velho Rock n' Roll, aonde era seu lugar, aonde ele fazia a todos eletrizar e agitar com seu som</p>
+					<p class="narracaoSobreBanda">A the vultures inicia sua jornada de shows logo após seu retorno em 2016</p>
+				</li>
+				<li>
+					<h2>Sobre os shows</h2>
+					<p class="sobreShow">Fazemos shows em todo território do sul do Brasil</p>
+					<p class="sobreShow">Podendo ser compratilhado com outras Bandas ou somente nosso</p>
+					<p class="sobreShow">Tendo duração e quantidade de músicas váriados de acordo com pacote de shows escolhido pelo contratante</p>
+					<p class="sobreShow">Não fornecemos estrutura de som para shows de grande porte</p>
+					<p class="sobreShow">Somente instrumentos, caixas e amplificadores particular de cada músico</p>
+					<p class="sobreShow">Podendo ser ultilizado em bares, e shows menores</p>
+				</li>
+			</ul>
+		</main>
+	</div>
+	<footer class="contato">
+		<h3>Entre em contato conosco</h3>
+
+		<form class="containerContato">
+
+		<label for="nomesobrenome">Nome e sobrenome</label>
+		<input type="text" id="nomesobrenome" class="inputContato" required>
+
+		<label for="email">Email</label>
+		<input type="email" id="email" class="inputContato" required placeholder="seuemail@dominío.com">
+
+
+		<label for ="telefone">Telefone</label>
+		<input type="tel" id="Telefone" class="inputContato" required placeholder="(xx)x.xxxx.xxxx">
+
+		<label for="mensagem">Mensagem</label>
+		<textarea cols="80" rowns="10" id=mensagem class="inputContato" required placeholder="Olá, gostaria de saber..."></textarea>
+
+		<fieldset>
+
+		<legend class="preferenciaDeContato">Como prefere o nosso contato?</legend>
+		<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+
+		<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+				
+
+		<label for="radio-whatsapp"><input type="radio" name="contato" value="Whatsapp" id="radio-whatsapp" checked>Whatsapp</label>
+		</fieldset>
+
+		<label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+			
+		<fieldset>
+	 		<legend class="preferenciaDeContato">Horário que prefere ser antendido</legend>
+	 		<select class="selecaoHorario" >
+	 			<option>Manhã</option>
+	 			<option>Tarde</option>
+	 			<option>Noite</option>
+	 		</select>
+ 		</fildset>
+		<input type="submit" value="Enviar formulário" class="enviar">
+
+		</form>
+	</footer>
+</body>
+</html>
+<script>
+	alert("Bem vindo a página da The Vultures");
+</script>

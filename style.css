@@ -1,0 +1,176 @@
+body {
+	margin: 0 auto;
+}
+
+header {
+	padding: 10px;
+	background: black;
+	height: 320px;
+	border-radius: 30px 30px 0px 0px;
+}
+
+.consultarShows {
+	margin-top: 30px;
+	text-align: center;
+}
+
+.inputConsultarShows {
+	background: rgba(20,20,20,0.8);
+	color: white;
+}
+
+.botaoConsultarShows {
+	background: orange;
+}
+
+.digiteNomeEstado {
+	margin-top: 15px;
+	color: orange;
+	font-size: 18px;
+	text-align: center;
+	font-family: serif;
+
+}
+
+.conteudoPrincipal {
+	background-image:url("banda.jpg");
+	background-position: center;
+	
+}
+
+h3 {
+	background: black;
+	margin-top: 15px;
+	font-size: 50px;
+	width: 100%;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: red;
+}
+
+.narracaoSobreBanda {
+	font-size: 20px;
+	color: white;
+	font-style: oblique;
+	width: 20%;
+	box-sizing: border-box;
+	padding: 20px;
+	margin: 10px 10px;
+	background: black;
+	background-color: rgba(20,20,20,0.8);
+	border-radius: 30px;
+}
+
+.sobreShow {
+	font-size: 20px;
+	color: white;
+	width: 30%;
+	box-sizing: border-box;
+	padding: 10px;
+	margin: 10px 10px;
+	background-color: rgba(20,20,20,0.8);
+	height: 100px;
+	
+}
+
+h4 {
+	font-weight: bold;
+	text-align: center;
+	font-size: 25px;
+	color: orange;
+	margin-bottom: 20px;
+}
+
+.contato {
+	font-size: 18px;
+	padding: 25px 25px;
+	background: black;
+	color: white;
+	border-radius: 0px 0px 30px 30px;
+
+}
+
+.inputContato {
+	font-size: 18px;
+	width: 20%;
+	margin: 20px 10px;
+	padding: 5px;
+	background: rgba(20,20,20,0.8);
+	color: white;
+}
+
+.preferenciaDeContato {
+	margin-top: 10px;
+	text-align: center;
+	padding: 10px;
+}
+
+.checkbox {
+	margin: 20px 0px 20px 0px;
+	text-align: center;
+	font-size: 18px;
+}
+
+.selecaoHorario {
+	font-size: 18px;
+	width: 100%;
+	text-align: center;
+	background: rgba(20,20,20,0.8);
+	color: white;
+}
+
+.enviar {
+	font-size: 25px;
+	font-weight: bold;
+	text-transform: uppercase;
+	background: orange;
+	height: 30px;
+	margin-top: 20px;
+	width: 100%;
+	text-align: center;
+}
+
+		/*MOBILE*/
+@media(max-width: 768px) {
+
+
+	header img {
+		width: 300px;
+	}
+
+	h2 {
+		font-size: 35px;
+		margin-bottom: 20px;
+	}
+
+	.conteudoPrincipal {
+		background-image:url("bandaMobi.jpg");
+		background-position: center;
+	}
+
+	.narracaoSobreBanda {
+		width: 100%;
+		margin: 0 0;
+		border-radius: 0px;
+
+	}
+
+	.sobreShow {
+		width: 100%;
+		margin: 0 0;
+
+	}
+
+	.inputContato {
+		width: 80%;
+		margin: 20px 10px;
+		padding: 5px;
+	}
+
+	.preferenciaDeContato {
+		font-size: 18px;
+		margin-top: 10px;
+		text-align: center;
+		padding: 10px;
+	}
+}	

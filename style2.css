@@ -1,0 +1,89 @@
+body {
+	background-image:url("theVulturesVermelho.png");
+	margin: 0 auto;
+	font-family: fantasy;
+	display: flex;
+	justify-content: center;
+	height: 300px;
+}
+
+.listaDeShows {
+	width: 50%;
+	height: 500px;
+	padding: 40px;
+	box-sizing: border-box;
+	border: 20px solid red;
+	background: black;
+	text-align: center;
+	border-radius: 20px;
+	margin-top: 200px;
+}
+
+li {
+	margin-top: 30px;
+}
+
+h1 {
+	font-size: 35px;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+	color: white;
+}
+
+h2 {
+	color: red;
+	margin: 10px 0px;
+	font-size: 30px;
+}
+
+p {
+	color: white;
+	line-height: 1.0;
+	font-size: 25px;
+}
+
+		/*MOBILE*/
+@media(max-width: 768px) {
+
+	body {
+		background-size: 380px;
+		background-position: center;
+	}
+
+	.listaDeShows {
+		width: 70%;
+		height: 390px;
+		padding: 40px 10px;
+		box-sizing: border-box;
+		border: 5px solid red;
+		background: black;
+		text-align: center;
+		border-radius: 20px;
+		margin-top: 205px;
+	}
+
+	li {
+		margin-top: 10px;
+	}
+
+	h1 {
+		font-size: 26px;
+		text-transform: uppercase;
+		margin-bottom: 40px;
+		color: white;
+	}
+
+	h2 {
+		color: red;
+		margin: 10px 0px;
+		font-size: 22px;
+	}
+
+	p {
+		color: white;
+		line-height: 1.0;
+		font-size: 16px;
+	}
+
+
+}

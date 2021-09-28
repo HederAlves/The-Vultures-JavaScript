@@ -13,12 +13,65 @@
 		<h1>
 			<img src="theVulturesVermelho.png">
 		</h1>
+		<div class="consultarShows">
+		<input class="inputConsultarShows">
+		<button class="botaoConsultarShows">Consultar Shows</button>
+
+		<script>
+			
+		var estadoParana = "Paraná";
+		var estadoSantaCatarina = "Santa Catarina";
+
+		var entrada = document.querySelector("input");
+		entrada.focus();
+
+
+
+			function pulaLinha() {
+		        document.write("<br>");
+		    }
+
+		    function mostra(frase) {
+		        document.write(frase);
+		        pulaLinha();
+		    }
+
+			function verifica() {
+
+				if(entrada.value == estadoParana) {
+
+					window.location.href = "index2.html";
+
+				} else { 
+
+					if(entrada.value == estadoSantaCatarina) {
+
+					window.location.href = "index3.html";
+					
+					} else {
+
+						mostra("Desculpa, mas não temos shows marcados para o seu estado");
+					}
+
+
+				entrada.value = "";
+				entrada.focus();
+				
+				}
+			}
+
+			var button = document.querySelector("button");
+			button.onclick = verifica;
+
+		</script>
+	</div>
+	<h2 class="digiteNomeEstado">Por favor digite o nome do seu estado e click em consultar</h2>
 	</header>
 	<div class="conteudoPrincipal">	
 		<main class="containerConteudoPrincipal">
 			<ul>
 				<li>
-					<h2>Sobre a banda</h2>
+					<h3>Sobre a banda</h3>
 					<p class="narracaoSobreBanda">Banda independente de Rock n' Roll, voltado ao publico grunge</p>
 					<p class="narracaoSobreBanda">Em 2008, a The Vultures começa a ganhar forma, as asas do nosso abutre crescia e ganhava forças.</p>
 					<p class="narracaoSobreBanda">Seus integrantes em 2008 ainda eram adolecentes, todos da mesma região, com um único e compartilhado sonho, o qual já começava a ser realidade</p>
@@ -31,7 +84,7 @@
 					<p class="narracaoSobreBanda">A the vultures inicia sua jornada de shows logo após seu retorno em 2016</p>
 				</li>
 				<li>
-					<h2>Sobre os shows</h2>
+					<h3>Sobre os shows</h3>
 					<p class="sobreShow">Fazemos shows em todo território do sul do Brasil</p>
 					<p class="sobreShow">Podendo ser compratilhado com outras Bandas ou somente nosso</p>
 					<p class="sobreShow">Tendo duração e quantidade de músicas váriados de acordo com pacote de shows escolhido pelo contratante</p>
@@ -43,7 +96,7 @@
 		</main>
 	</div>
 	<footer class="contato">
-		<h3>Entre em contato conosco</h3>
+		<h4>Entre em contato conosco</h4>
 
 		<form class="containerContato">
 
@@ -82,11 +135,8 @@
 	 		</select>
  		</fildset>
 		<input type="submit" value="Enviar formulário" class="enviar">
-
 		</form>
+
 	</footer>
 </body>
 </html>
-<script>
-	alert("Bem vindo a página da The Vultures");
-</script>

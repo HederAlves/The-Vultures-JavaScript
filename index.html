@@ -21,8 +21,6 @@
 			
 		var estadoParana = "Paraná";
 		var estadoSantaCatarina = "Santa Catarina";
-		var paranaEstado = "Paraná ";
-		var santaCatarinaEstado = "Santa Catarina ";
 
 		var entrada = document.querySelector("input");
 		entrada.focus();
@@ -40,13 +38,13 @@
 
 			function verifica() {
 
-				if(entrada.value == estadoParana &| paranaEstado) {
+				if(entrada.value == estadoParana) {
 
 					window.location.href = "parana.html";
 
 				} else { 
 
-					if(entrada.value == estadoSantaCatarina &| santaCatarinaEstado) {
+					if(entrada.value == estadoSantaCatarina) {
 
 					window.location.href = "santaCatarina.html";
 					

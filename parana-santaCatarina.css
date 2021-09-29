@@ -1,10 +1,12 @@
-body {
+.imagemFundo {
 	background-image:url("theVulturesVermelho.png");
+	background-position: center;
+	background-size: 300px;
 	margin: 0 auto;
 	font-family: serif;
 	display: flex;
 	justify-content: center;
-	height: 300px;
+	height: 940px;
 }
 
 .listaDeShows {
@@ -45,22 +47,30 @@ p {
 		/*MOBILE*/
 @media(max-width: 768px) {
 
-	body {
-		width: 340px;
-		background-size: 380px;
+	.imagemFundo {
+		width: 330px;
+		height: 706px;
+		background-image:url("theVulturesVermelho.png");
+		background-size: 334px;
 		background-position: center;
+
+	}
+
+	body {
+		padding: 50px 10px 10px 5px;
+
 	}
 
 	.listaDeShows {
 		width: 70%;
-		height: 390px;
+		height: 360px;
 		padding: 40px 10px;
 		box-sizing: border-box;
 		border: 5px solid red;
 		background: black;
 		text-align: center;
 		border-radius: 20px;
-		margin-top: 205px;
+		margin-top: 164px;
 	}
 
 	li {
@@ -85,6 +95,8 @@ p {
 		line-height: 1.0;
 		font-size: 16px;
 	}
-
+	.showIndisponivel {
+		padding: 75px 0px;
+	}
 
 }

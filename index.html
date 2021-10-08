@@ -14,56 +14,8 @@
 			<img src="theVulturesVermelho.png">
 		</h1>
 		<div class="consultarShows">
-		<input class="inputConsultarShows">
-		<button class="botaoConsultarShows">Consultar Shows</button>
-
-		<script>
-			
-		var estadoParana = "Paraná";
-		var estadoSantaCatarina = "Santa Catarina";
-
-		var entrada = document.querySelector("input");
-		entrada.focus();
-
-
-
-			function pulaLinha() {
-		        document.write("<br>");
-		    }
-
-		    function mostra(frase) {
-		        document.write(frase);
-		        pulaLinha();
-		    }
-
-			function verifica() {
-
-				if(entrada.value == estadoParana) {
-
-					window.location.href = "parana.html";
-
-				} else { 
-
-					if(entrada.value == estadoSantaCatarina) {
-
-					window.location.href = "santaCatarina.html";
-					
-					} else {
-
-						window.location.href = "showIndisponivel.html";
-					}
-
-
-				entrada.value = "";
-				entrada.focus();
-				
-				}
-			}
-
-			var button = document.querySelector("button");
-			button.onclick = verifica;
-
-		</script>
+		<input class="inputConsultarShows" data-consulta-input>
+		<button class="botaoConsultarShows" data-consulta-button>Consultar Shows</button>
 	</div>
 	<h2 class="digiteNomeEstado">Por favor digite o nome do seu estado e click em consultar</h2>
 	</header>
@@ -137,5 +89,6 @@
 		<input type="submit" value="Enviar formulário" class="enviar">
 		</form>
 	</footer>
+	<script src="pesquisaShows.js"></script>
 </body>
 </html>

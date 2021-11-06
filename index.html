@@ -4,20 +4,24 @@
 	<meta charset="UTF8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>The Vultures</title>
-	<link rel="stylesheet" href="reset.css">
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="flexbox.css">
+	<link rel="stylesheet" href="assets/reset.css">
+	<link rel="stylesheet" href="assets/style.css">
+	<link rel="stylesheet" href="assets/flexbox.css">
 </head>
 <body>
 	<header class="containerCabecalho">
 		<h1>
-			<img src="theVulturesVermelho.png">
+			<img src="imagens/theVulturesVermelho.png">
 		</h1>
 		<div class="consultarShows">
-		<input class="inputConsultarShows" data-consulta-input>
-		<button class="botaoConsultarShows" data-consulta-button>Consultar Shows</button>
-	</div>
-	<h2 class="digiteNomeEstado">Por favor digite o nome do seu estado e click em consultar</h2>
+			<input class="inputConsultarShows" data-consulta-input>
+			<button class="botaoConsultarShows" data-consulta-button>
+				Consultar Shows
+			</button>
+		</div>
+		<h2 class="digiteNomeEstado">
+			Por favor digite o nome do seu estado e click em consultar
+		</h2>
 	</header>
 	<div class="conteudoPrincipal">	
 		<main class="containerConteudoPrincipal">
@@ -49,46 +53,44 @@
 	</div>
 	<footer class="contato">
 		<h4>Entre em contato conosco</h4>
-
 		<form class="containerContato">
-
-		<label for="nomesobrenome">Nome e sobrenome</label>
-		<input type="text" id="nomesobrenome" class="inputContato" required>
-
-		<label for="email">Email</label>
-		<input type="email" id="email" class="inputContato" required placeholder="seuemail@dominío.com">
-
-
-		<label for ="telefone">Telefone</label>
-		<input type="tel" id="Telefone" class="inputContato" required placeholder="(xx)x.xxxx.xxxx">
-
-		<label for="mensagem">Mensagem</label>
-		<textarea cols="80" rowns="10" id=mensagem class="inputContato" required placeholder="Olá, gostaria de saber..."></textarea>
-
-		<fieldset>
-
-		<legend class="preferenciaDeContato">Como prefere o nosso contato?</legend>
-		<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
-
-		<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
-				
-
-		<label for="radio-whatsapp"><input type="radio" name="contato" value="Whatsapp" id="radio-whatsapp" checked>Whatsapp</label>
-		</fieldset>
-
-		<label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
-			
-		<fieldset>
-	 		<legend class="preferenciaDeContato">Horário que prefere ser antendido</legend>
-	 		<select class="selecaoHorario" >
-	 			<option>Manhã</option>
-	 			<option>Tarde</option>
-	 			<option>Noite</option>
-	 		</select>
- 		</fildset>
-		<input type="submit" value="Enviar formulário" class="enviar">
+			<label for="nomesobrenome">Nome e sobrenome</label>
+			<input type="text" id="nomesobrenome" class="inputContato">
+			<label for="email">Email</label>
+			<input type="email" id="email" class="inputContato" required placeholder="seuemail@dominío.com">
+			<label for ="telefone">Telefone</label>
+			<input type="tel" id="Telefone" class="inputContato" required placeholder="(xx)x.xxxx.xxxx">
+			<label for="mensagem">Mensagem</label>
+			<textarea cols="80" rowns="10" id=mensagem class="inputContato" required placeholder="Olá, gostaria de saber..."></textarea>
+			<fieldset>
+				<legend class="preferenciaDeContato">Como prefere o nosso contato?</legend>
+				<label for="radio-email">
+					<input type="radio" name="contato" value="email" id="radio-email">
+					Email
+				</label>
+				<label for="radio-telefone">
+					<input type="radio" name="contato" value="telefone" id="radio-telefone">
+					Telefone
+				</label>		
+				<label for="radio-whatsapp">
+					<input type="radio" name="contato" value="Whatsapp" id="radio-whatsapp" checked>
+					Whatsapp
+				</label>
+			</fieldset>
+			<label class="checkbox">
+				<input type="checkbox" checked>Gostaria de receber nossas novidades por email?
+			</label>
+			<fieldset>
+		 		<legend class="preferenciaDeContato">Horário que prefere ser antendido</legend>
+		 		<select class="selecaoHorario" >
+		 			<option>Manhã</option>
+		 			<option>Tarde</option>
+		 			<option>Noite</option>
+		 		</select>
+	 		</fildset>
+			<input type="submit" value="Enviar formulário" class="enviar">
 		</form>
 	</footer>
-	<script src="pesquisaShows.js"></script>
 </body>
+<script src="controller/pesquisaShows.js"></script>
 </html>

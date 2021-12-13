@@ -63,41 +63,15 @@
 	<footer class="contato">
 		<h4>Entre em contato conosco</h4>
 		<form class="containerContato" action="https://formsubmit.co/alvesheder92@gmail.com" method="POST">
-			<label for="nomesobrenome">Nome e sobrenome</label>
+			<label>Nome e sobrenome</label>
 			<input type="text" id="nomesobrenome" class="inputContato">
-			<label for="email">Email</label>
+			<label>Email</label>
 			<input type="email" id="email" class="inputContato" required placeholder="seuemail@dominío.com">
-			<label for ="telefone">Telefone</label>
+			<label>Telefone</label>
 			<input type="tel" id="Telefone" class="inputContato" required placeholder="(xx)x.xxxx.xxxx">
-			<label for="mensagem">Mensagem</label>
+			<label>Mensagem</label>
 			<textarea cols="80" rowns="10" id=mensagem class="inputContato" required placeholder="Olá, gostaria de saber..."></textarea>
-			<fieldset>
-				<legend class="preferenciaDeContato">Como prefere o nosso contato?</legend>
-				<label for="radio-email">
-					<input type="radio" name="contato" value="email" id="radio-email">
-					Email
-				</label>
-				<label for="radio-telefone">
-					<input type="radio" name="contato" value="telefone" id="radio-telefone">
-					Telefone
-				</label>		
-				<label for="radio-whatsapp">
-					<input type="radio" name="contato" value="Whatsapp" id="radio-whatsapp" checked>
-					Whatsapp
-				</label>
-			</fieldset>
-			<label class="checkbox">
-				<input type="checkbox" checked>Gostaria de receber nossas novidades por email?
-			</label>
-			<fieldset>
-		 		<legend class="preferenciaDeContato">Horário que prefere ser antendido</legend>
-		 		<select class="selecaoHorario" >
-		 			<option>Manhã</option>
-		 			<option>Tarde</option>
-		 			<option>Noite</option>
-		 		</select>
-	 		</fildset>
-			<input type="submit" value="Enviar formulário" class="enviar">
+			<button type="submit" class="enviar">Enviar</button>
 		</form>
 	</footer>
 </body>
